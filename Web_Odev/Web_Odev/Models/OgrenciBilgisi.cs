@@ -5,13 +5,12 @@ using System.Web;
 
 namespace Web_Odev.Models
 {
-    public class OgrenciBilgisi
+    public class OgrenciBilgi
     {
         public int OgrID { get; set; }
-        public int OgrAdi { get; set; }
-        public int OgrSoyadi { get; set; }
+        public string OgrAdi { get; set; }
+        public string OgrSoyadi { get; set; }
         public int OgrNo { get; set; }
-        public int  OgrKursID { get; set; }
-        public int OgrKurs { get; set; }
+        public int  KursID { get; set; }
     }
 }
