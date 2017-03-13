@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+
 namespace Web_Odev.Models
 {
     public class OgrenciBilgi
@@ -11,6 +12,9 @@ namespace Web_Odev.Models
         public string OgrAdi { get; set; }
         public string OgrSoyadi { get; set; }
         public int OgrNo { get; set; }
-        public int  KursID { get; set; }
+        public int kursID { get; set; }
+        //mapping
+        public Kurslar Kurslar { get; set; }
+
     }
 }
