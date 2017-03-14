@@ -27,11 +27,11 @@ namespace Web_Odev
                 Kurslar kurs = new Kurslar();
                 kurs.kursAdi = txtkursAdi.Text;
                 kurs.kursSaati = Convert.ToInt32(txtkurssaati.Text);
-                kurs.kursUcret = Convert.ToInt32(txtkursucreti.Text);
+                kurs.KursUcret = Convert.ToInt32(txtkursucreti.Text);
 
                 database.Kurslar.Add(kurs);
                 database.SaveChanges();
-            }
+            }       
             Response.Redirect("Kurslar.aspx");
         }
     }

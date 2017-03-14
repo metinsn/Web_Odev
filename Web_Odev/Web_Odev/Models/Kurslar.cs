@@ -11,7 +11,7 @@ namespace Web_Odev.Models
         [Key]
         public int kursID { get; set; }
         public string kursAdi { get; set; }
-        public float kursUcret { get; set; }
+        public float KursUcret { get; set; }
         public int kursSaati { get; set; }
         //mapping
         public List<OgrenciBilgi> OgrenciBilgisi { get; set; }

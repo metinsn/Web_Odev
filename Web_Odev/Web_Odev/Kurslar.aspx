@@ -14,9 +14,9 @@
     <form id="form1" runat="server">
         <div class="container" style="background-color:whitesmoke">
             <%-- Başlık --%>
-            <div class="col-lg-12" style="background-color: azure; border: groove; border-color: blue">
+            <div class="col-lg-12" style="background-color: azure; border: groove; border-color: blue;text-align:center ;text-size-adjust:auto" >
                 <marguee>
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 35px; font-style: italic">Kurs Kayıt</h1>
+                <h1 style="font-family: 'Times New Roman', Times, serif; font-style: italic">Kurs Kayıt</h1>
                 </marguee>
             </div>
             <%-- Açılır Menü --%>
@@ -31,7 +31,7 @@
                 </ul>
             </div>
             <%-- Tablo --%>
-            <div class="col-lg-12">
+            <div class="col-lg-12" >
                 <table class="table table-bordered">
                     <tr>
                         <td>
@@ -82,10 +82,8 @@
                                         <td><%#Eval("kursUcret") %></td>
                                         <td><%#Eval("kursSaati") %></td>
                                         <td>
-                                            <a href="kuslar.aspx?ID=<%#Eval("kursID") %>" class="btn btn-link">Sil</a>
-                                             <a href="kuslar.aspx?ID=<%#Eval("kursID") %>" class="btn btn-default">Güncelle</a>
-
-
+                                            <a href="kuslar.aspx?ID=<%#Eval("kursID") %>" class="btn btn-primary">Sil</a>
+                                             <a href="kuslar.aspx?ID=<%#Eval("kursID") %>" class="btn btn-success">Güncelle</a>
                                         </td>
                                     </tr>
                                 </ItemTemplate>
