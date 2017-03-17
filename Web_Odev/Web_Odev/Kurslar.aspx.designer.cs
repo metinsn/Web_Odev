@@ -85,6 +85,15 @@ namespace Web_Odev {
         protected global::System.Web.UI.WebControls.Button butonKaydet;
         
         /// <summary>
+        /// butonGuncelle denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button butonGuncelle;
+        
+        /// <summary>
         /// Tekrar1 denetimi.
         /// </summary>
         /// <remarks>

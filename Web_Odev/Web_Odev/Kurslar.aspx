@@ -60,6 +60,7 @@
                     <tr>
                         <td colspan="2">
                             <asp:Button ID="butonKaydet" runat="server" Text="Kaydet" CssClass="btn btn-block" Font-Bold="true" BackColor="Aqua" OnClick="butonKaydet_Click" />
+                            <asp:Button ID="butonGuncelle" runat="server" Text="Güncelle" CssClass="btn btn-block" Font-Bold="true" BackColor="#ff5050" OnClick="butonGuncelle_Click"  />
                         </td>
                     </tr>
                 </table>
@@ -82,8 +83,8 @@
                                         <td><%#Eval("kursUcret") %></td>
                                         <td><%#Eval("kursSaati") %></td>
                                         <td>
-                                            <a href="kuslar.aspx?ID=<%#Eval("kursID") %>" class="btn btn-primary">Sil</a>
-                                             <a href="kuslar.aspx?ID=<%#Eval("kursID") %>" class="btn btn-success">Güncelle</a>
+                                            <a href="kurslar.aspx?ID=<%#Eval("kursID") %>" class="btn btn-primary">Sil</a>
+                                             <a href="kurslar.aspx?GID=<%#Eval("kursID") %>" class="btn btn-success">Güncelle</a>
                                         </td>
                                     </tr>
                                 </ItemTemplate>
