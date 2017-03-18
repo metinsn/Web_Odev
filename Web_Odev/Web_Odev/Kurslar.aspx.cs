@@ -16,32 +16,39 @@ namespace Web_Odev
                 Tekrar1.DataBind();
             }
 
-            if (Request.QueryString["ID"] != null)
+            if (!IsPostBack)
             {
-                int id = int.Parse(Request.QueryString["ID"]);
-
-                using (EntityBaglan database = new EntityBaglan())
+                if (Request.QueryString["ID"] != null)
                 {
-                    var deger = database.Kurslar.Find(id);
-                    database.Kurslar.Remove(deger);
-                    database.SaveChanges();
-                    Response.Redirect("Kurslar.aspx");
+                    int id = int.Parse(Request.QueryString["ID"]);
+
+                    using (EntityBaglan database = new EntityBaglan())
+                    {
+                        var deger = database.Kurslar.Find(id);
+                        database.Kurslar.Remove(deger);
+                        database.SaveChanges();
+                        Response.Redirect("Kurslar.aspx");
+                    }
+                }
+
+                if (Request.QueryString["GID"] != null)
+                {
+                    int gid = int.Parse(Request.QueryString["GID"]);
+
+                    using (EntityBaglan database = new EntityBaglan())
+                    {
+                        var deger = database.Kurslar.Find(gid);
+                        txtkursAdi.Text = deger.kursAdi;
+                        txtkurssaati.Text = Convert.ToString(deger.kursSaati);
+                        txtkursucreti.Text = Convert.ToString(deger.KursUcret);
+
+                    }
                 }
             }
 
-            if (Request.QueryString["GID"] != null)
-            {
-                int gid = int.Parse(Request.QueryString["GID"]);
+            
 
-                using (EntityBaglan database = new EntityBaglan())
-                {
-                    var deger = database.Kurslar.Find(gid);
-                    txtkursAdi.Text = deger.kursAdi;
-                    txtkurssaati.Text = Convert.ToString(deger.kursSaati);
-                    txtkursucreti.Text = Convert.ToString(deger.KursUcret);
-
-                }
-            }
+            
 
         }
 

@@ -44,7 +44,7 @@
                             <asp:Label ID="Etiket2" runat="server" Text="Kurs Saati :" Font-Size=" 25px" Font-Italic="true"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtkurssaati" CssClass="form-control" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtkurssaati" CssClass="form-control" runat="server" TextMode="Number"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -52,7 +52,7 @@
                             <asp:Label ID="Etiket3" runat="server" Text="Kurs Ücreti :" Font-Size=" 25px" Font-Italic="true"></asp:Label>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtkursucreti" CssClass="form-control" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtkursucreti" CssClass="form-control" runat="server" TextMode="Number"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
