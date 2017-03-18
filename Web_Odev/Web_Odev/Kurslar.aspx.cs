@@ -1,9 +1,6 @@
 ﻿using System;
 using Web_Odev.Models;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 using Web_Odev.Context;
 
@@ -21,7 +18,7 @@ namespace Web_Odev
 
             if (Request.QueryString["ID"] != null)
             {
-                int id =  int.Parse(Request.QueryString["ID"]);
+                int id = int.Parse(Request.QueryString["ID"]);
 
                 using (EntityBaglan database = new EntityBaglan())
                 {
@@ -42,15 +39,18 @@ namespace Web_Odev
                     txtkursAdi.Text = deger.kursAdi;
                     txtkurssaati.Text = Convert.ToString(deger.kursSaati);
                     txtkursucreti.Text = Convert.ToString(deger.KursUcret);
-                    
+
                 }
             }
-            
+
         }
 
 
         protected void butonKaydet_Click(object sender, EventArgs e)
-        {            
+        {
+            if (txtkursAdi.Text != "" && txtkurssaati.Text != "" && txtkursucreti.Text != "")
+            {
+
                 using (Context.EntityBaglan database = new Web_Odev.Context.EntityBaglan())
                 {
                     Kurslar kurs = new Kurslar();
@@ -61,23 +61,23 @@ namespace Web_Odev
                     database.Kurslar.Add(kurs);
                     database.SaveChanges();
                 }
-                Response.Redirect("Kurslar.aspx");            
+                Response.Redirect("Kurslar.aspx");
+            }
         }
-               
+
 
         protected void butonGuncelle_Click(object sender, EventArgs e)
         {
             if (Request.QueryString["GID"] != null)
             {
-                int gid = int.Parse(Request.QueryString["GID"]);
-
                 using (Context.EntityBaglan database = new Web_Odev.Context.EntityBaglan())
                 {
+                    int gid = int.Parse(Request.QueryString["GID"]);
                     var deger = database.Kurslar.Find(gid);
                     deger.kursAdi = txtkursAdi.Text;
                     deger.kursSaati = Convert.ToInt32(txtkurssaati.Text);
                     deger.KursUcret = Convert.ToInt32(txtkursucreti.Text);
-                    
+
                     database.SaveChanges();
                 }
                 Response.Redirect("Kurslar.aspx");

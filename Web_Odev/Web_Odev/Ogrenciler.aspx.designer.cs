@@ -31,13 +31,13 @@ namespace Web_Odev {
         protected global::System.Web.UI.WebControls.Label Etiket1;
         
         /// <summary>
-        /// txtAdi denetimi.
+        /// txtOgrAdi denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAdi;
+        protected global::System.Web.UI.WebControls.TextBox txtOgrAdi;
         
         /// <summary>
         /// Etiket2 denetimi.
@@ -49,13 +49,13 @@ namespace Web_Odev {
         protected global::System.Web.UI.WebControls.Label Etiket2;
         
         /// <summary>
-        /// txtsoyadi denetimi.
+        /// txtOgrSoyAdi denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsoyadi;
+        protected global::System.Web.UI.WebControls.TextBox txtOgrSoyAdi;
         
         /// <summary>
         /// Etiket3 denetimi.
@@ -67,13 +67,13 @@ namespace Web_Odev {
         protected global::System.Web.UI.WebControls.Label Etiket3;
         
         /// <summary>
-        /// txtno denetimi.
+        /// txtOgrNo denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtno;
+        protected global::System.Web.UI.WebControls.TextBox txtOgrNo;
         
         /// <summary>
         /// Etiket4 denetimi.
@@ -85,12 +85,39 @@ namespace Web_Odev {
         protected global::System.Web.UI.WebControls.Label Etiket4;
         
         /// <summary>
-        /// txtKurs denetimi.
+        /// KursAdi denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtKurs;
+        protected global::System.Web.UI.WebControls.TextBox KursAdi;
+        
+        /// <summary>
+        /// butonKaydet denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button butonKaydet;
+        
+        /// <summary>
+        /// butonGuncelle denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button butonGuncelle;
+        
+        /// <summary>
+        /// Tekrar1 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Tekrar1;
     }
 }

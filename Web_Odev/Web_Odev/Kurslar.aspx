@@ -14,10 +14,8 @@
     <form id="form1" runat="server">
         <div class="container" style="background-color:whitesmoke">
             <%-- Başlık --%>
-            <div class="col-lg-12" style="background-color: azure; border: groove; border-color: blue;text-align:center ;text-size-adjust:auto" >
-                <marguee>
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-style: italic">Kurs Kayıt</h1>
-                </marguee>
+            <div class="col-lg-12" style="background-color: azure; border: groove; border-color: blue;text-align:center ;text-size-adjust:auto" >         
+                <h1 style="font-family: 'Times New Roman', Times, serif; font-style: italic">Kurs Kayıt</h1>  
             </div>
             <%-- Açılır Menü --%>
             <div class="btn-group">
@@ -26,8 +24,8 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Kurslar</a></li>
-                    <li><a href="#">Öğrenciler</a></li>
+                    <li><a href="Kurslar.aspx">Kurslar</a></li>
+                    <li><a href="Ogrenciler.aspx">Öğrenciler</a></li>
                 </ul>
             </div>
             <%-- Tablo --%>
@@ -93,16 +91,7 @@
                     </table>
                 </div>
             </div>
-
-
-
-
-
-
-
-
         </div>
-
     </form>
 </body>
 </html>
